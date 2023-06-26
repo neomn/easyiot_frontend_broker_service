@@ -1,0 +1,9 @@
+service:
+  rabbitmq:
+    build:
+      contex:.
+      dockerfile: Dockerfile
+    container_name: rabbitmqc
+    restart: unless-stopped
+    tty: true
+    hostname: rabbitmq
